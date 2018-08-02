@@ -40,6 +40,11 @@ public class Fibonacci {
         return res;
     }
 
+    /**
+     * Fibonacci O(logn)
+     * @param n
+     * @return
+     */
     public static int fib3(int n){
         if (n<1)
             return 0;
@@ -48,5 +53,21 @@ public class Fibonacci {
         int[][] base = {{1,1},{1,0}};
         int[][] res = Util.matPow(base,n-2);
         return res[0][0]+res[1][0];
+    }
+
+    /**
+     * 假设农场中的成熟的母牛每年会生一只小母牛，而且永远不会死。第一年农场有一只成熟的母牛，从第二年开始母牛开始生小母牛。
+     * 每只小母牛三年之后成熟又可以生小母牛。给定整数N，求N年后牛的数量。
+     * @param n
+     * @return
+     */
+    public static int farmNainiu(int n){
+        if (n<1)
+            return 0;
+        if (n<=3)
+            return n;
+        int[][] base = {{1,1,0},{0,0,1},{1,0,0}};
+        int[][] res = Util.matPow(base,n-3);
+        return 3*res[0][0]+2*res[1][0]+res[2][0];
     }
 }

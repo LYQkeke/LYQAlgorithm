@@ -15,6 +15,7 @@ public class Test {
         System.out.println("f1 "+Fibonacci.fib1(20));
         System.out.println("f2 "+Fibonacci.fib2(20));
         System.out.println("f3 "+Fibonacci.fib3(20));
+        System.out.println(Fibonacci.farmNainiu(6));
     }
 
     public static void main(String[] args){
