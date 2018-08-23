@@ -1,5 +1,6 @@
 package com.keke;
 
+import com.keke.dp_recursion.Coins;
 import com.keke.dp_recursion.Fibonacci;
 import com.keke.dp_recursion.MinCoins;
 import com.keke.dp_recursion.MinPath;
@@ -40,10 +41,19 @@ public class Test {
         System.out.println(MinCoins.minCoins4(arr,10));
     }
 
+    private static void runCoins(){
+        int[] arr = {5,10,25,1};
+        System.out.println(Coins.coins1(arr,15));
+        System.out.println(Coins.coins2(arr,15));
+        System.out.println(Coins.coins3(arr,15));
+        System.out.println(Coins.coins4(arr,15));
+    }
+
     public static void main(String[] args){
 
 //        runFibnacci();
 //        runMinPath();
-        runMinCoins();
+//        runMinCoins();
+        runCoins();
     }
 }
