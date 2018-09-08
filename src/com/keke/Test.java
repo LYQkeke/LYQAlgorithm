@@ -1,9 +1,8 @@
 package com.keke;
 
-import com.keke.dp_recursion.Coins;
-import com.keke.dp_recursion.Fibonacci;
-import com.keke.dp_recursion.MinCoins;
-import com.keke.dp_recursion.MinPath;
+import com.keke.dp_recursion.*;
+
+import java.util.Arrays;
 
 /**
  * Created by KEKE on 2018/8/2
@@ -49,11 +48,20 @@ public class Test {
         System.out.println(Coins.coins4(arr,15));
     }
 
+    private static void runLIS(){
+
+        int[] arr = {2,1,5,3,6,4,8,9,7};
+        System.out.println(Arrays.toString(LIS.lis1(arr)));
+        System.out.println(Arrays.toString(LIS.lis2(arr)));
+    }
+
     public static void main(String[] args){
 
 //        runFibnacci();
 //        runMinPath();
 //        runMinCoins();
-        runCoins();
+//        runCoins();
+        runLIS();
+
     }
 }
