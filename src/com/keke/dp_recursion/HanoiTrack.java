@@ -56,6 +56,9 @@ public class HanoiTrack {
             int res = process(arr, i - 1, mid, from, to);
             if (res == -1)
                 return -1;
+            /**
+             *  1 << i  ==== 2^(i-1)
+             */
             return (1 << i) + res;
         }
     }
