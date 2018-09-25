@@ -71,7 +71,8 @@ public class LCSt {
     }
 
     /**
-     * 在动态规划中每次只记录左上角的dp值
+     * 在动态规划中每次只记录左上角的dp值 不需要再使用dp数组
+     * 所以额外空间复杂度为O(1)
      *
      * @param str1
      * @param str2
