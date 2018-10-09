@@ -62,6 +62,7 @@ public class Test {
 //        runMinCoins();
 //        runCoins();
         runLIS();
+        Integer i;
 
     }
 }
