@@ -4,6 +4,8 @@ import java.util.Stack;
 
 /**
  * Created by KEKE on 2018/10/13
+ *
+ * 仅仅使用递归函数来实现一个栈的逆序
  */
 public class P008 {
 
