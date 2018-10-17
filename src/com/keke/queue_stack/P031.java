@@ -39,7 +39,7 @@ public class P031 {
                 while (!qmax.isEmpty()&&arr[qmax.peekLast()]<=arr[j]){
                     qmax.pollLast();
                 }
-                qmax.addLast(j);// 实际上并不是只入队一次
+                qmax.addLast(j);// 实际上并不是只入队一次，加个标志做一下区分是否需要重新入队
                 c++;
                 while (!qmin.isEmpty()&&arr[qmin.peekLast()]>=arr[j]){
                     qmin.pollLast();
