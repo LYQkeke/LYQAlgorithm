@@ -28,14 +28,15 @@ public class P034 {
         }
     }
 
-}
+    class Node{
 
-class Node{
+        public int value;
+        public Node next;
 
-    public int value;
-    public Node next;
-
-    public Node(int value){
-        this.value = value;
+        public Node(int value){
+            this.value = value;
+        }
     }
+
 }
+
