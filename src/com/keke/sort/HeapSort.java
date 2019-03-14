@@ -14,6 +14,7 @@ public class HeapSort {
         int temp, child;
         for (temp=arr[pos];2*pos+1<=ed;pos=child){
             child = 2*pos + 1;
+            temp = arr[pos];
             if (child<ed&&arr[child]<arr[child+1])
                 child++;
             if (arr[child]>temp){
